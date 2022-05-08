@@ -74,7 +74,7 @@ body {
   display: none;
 }
 
-.corpo {
+.main-content {
   display: flex;
   justify-content: space-between;
   width: 935px;
@@ -82,7 +82,7 @@ body {
   margin-top: 88px;
 }
 
-.esquerda {
+.left {
   width: 100%;
   max-width: 614px;
 }
@@ -114,7 +114,7 @@ body {
   margin-right: 10px;
 }
 
-.story .imagem {
+.story .image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,13 +124,13 @@ body {
   
 }
 
-.story .imagem img {
+.story .image img {
   width: 56px;
   height: 56px;
   border-radius: 50%;
 }
 
-.story .usuario {
+.story .user {
   width: 66px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -138,7 +138,7 @@ body {
   height: 14px;
 }
 
-.stories .setinha {
+.stories .arrow {
   position: absolute;
   right: 10px;
   top: 45px;
@@ -157,7 +157,7 @@ body {
   margin-top: 18px;
 }
 
-.post .topo {
+.post .post-top {
   display: flex;
   justify-content: space-between;
   padding: 13px 16px;
@@ -165,44 +165,44 @@ body {
   font-weight: 500;
 }
 
-.post .topo .usuario, .post .topo .acoes {
+.post .post-top .user, .post .post-top .actions {
   display: flex;
   align-items: center;
 }
 
-.post .topo img {
+.post .post-top img {
   width: 32px;
   height: 32px;
   margin-right: 10px;
 }
 
-.post .usuario, .post .topo img, .post .fundo img, .post ion-icon, .post strong {
+.post .user, .post .post-top img, .post .post-bottom img, .post ion-icon, .post strong {
   cursor: pointer;
 }
 
-.post .conteudo img {
+.post .content img {
   width: 100%;
 }
 
-.post .fundo .acoes {
+.post .post-bottom .actions {
   display: flex;
   justify-content: space-between;
   padding: 13px 16px;
   font-size: 24px;
 }
 
-.post .fundo .acoes div:first-child ion-icon {
+.post .post-bottom .actions div:first-child ion-icon {
   margin-right: 6px;
 }
 
-.post .fundo .curtidas {
+.post .post-bottom .likes {
   display: flex;
   align-items: center;
   padding: 0 16px 13px;
   font-weight: 300;
 }
 
-.post .fundo .curtidas img {
+.post .post-bottom .likes img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -218,18 +218,18 @@ body {
   top: 88px;
 }
 
-.sidebar > .usuario {
+.sidebar > .user {
   display: flex;
   align-items: center;
 }
 
-.sidebar > .usuario img {
+.sidebar > .user img {
   width: 56px;
   height: 56px;
   border-radius: 50%;
 }
 
-.sidebar > .usuario .texto {
+.sidebar > .user .text {
   display: flex;
   flex-direction: column;
   margin-left: 14px;
@@ -237,19 +237,19 @@ body {
   color: #8E8E8E;
 }
 
-.sidebar > .usuario .texto strong {
+.sidebar > .user .text strong {
   font-weight: 500;
   color: #262626;
 }
 
-.sidebar .sugestoes .titulo {
+.sidebar .sugestions .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0 14px;
 }
 
-.sidebar .sugestoes .sugestao {
+.sidebar .sugestions .sugestion {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -258,28 +258,28 @@ body {
   margin-bottom: 16px;
 }
 
-.sidebar .sugestoes .sugestao .usuario {
+.sidebar .sugestions .sugestion .user {
   display: flex;
 }
 
-.sidebar .sugestoes img {
+.sidebar .sugestions img {
   width: 32px;
   height: 32px;
 }
 
-.sidebar .sugestoes .seguir {
+.sidebar .sugestions .seguir {
   color: #139EF2;
   font-weight: 600;
 }
 
-.sidebar .sugestoes .sugestao .usuario .texto {
+.sidebar .sugestions .sugestion .user .text {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.sidebar .sugestoes .sugestao .usuario .texto :last-child {
+.sidebar .sugestions .sugestion .user .text :last-child {
   color: #8E8E8E;
   font-weight: 400;
 }
@@ -319,14 +319,14 @@ body {
     padding: 0 20px;
   }
 
-  .corpo {
+  .main-content {
     justify-content: center;
     width: 100%;
   }
 }
 
 @media (max-width: 614px) {
-  .corpo {
+  .main-content {
     margin-top: 0;
   }
 
