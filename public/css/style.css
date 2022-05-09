@@ -157,6 +157,10 @@ body {
   margin-top: 18px;
 }
 
+.post ion-icon[name="heart"] {
+  color: red;
+}
+
 .post .post-top {
   display: flex;
   justify-content: space-between;
@@ -298,11 +302,11 @@ body {
   margin-top: 18px;
 }
 
-.fundo-mobile {
+.bottom-bar {
   display: none;
 }
 
-.fundo-mobile ion-icon {
+.bottom-bar ion-icon {
   cursor: pointer;
 }
 
@@ -363,7 +367,7 @@ body {
     display: flex;
   }
 
-  .fundo-mobile {
+  .bottom-bar {
     display: flex;
     padding: 0 20px;
     justify-content: space-between;

@@ -21,7 +21,7 @@ function Post(props) {
             <div class="post-bottom">
                 <div class="actions">
                   <div>
-                    <HeartIcon />
+                    <HeartIcon name="heart-outline"/>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <PlaneIcon />
                   </div>

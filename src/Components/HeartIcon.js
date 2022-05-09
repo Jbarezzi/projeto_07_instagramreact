@@ -1,3 +1,3 @@
-export default function HeartIcon() {
-    return <ion-icon name="heart-outline"></ion-icon>;
+export default function HeartIcon(props) {
+    return (<ion-icon name={`${props.name}`}></ion-icon>);
 }

@@ -1,7 +1,8 @@
 import Logo from "./Logo";
-import IconLogo from "./IconLogo"
-import PlaneIcon from "./PlaneIcon"
+import IconLogo from "./IconLogo";
+import PlaneIcon from "./PlaneIcon";
 import HeartIcon from "./HeartIcon";
+import PersonIcon from "./PersonIcon";
 
 export default function Navbar() {
     return (
@@ -28,8 +29,8 @@ export default function Navbar() {
           <div class="icons">
             <PlaneIcon />
             <ion-icon name="compass-outline"></ion-icon>
-            <HeartIcon />
-            <ion-icon name="person-outline"></ion-icon>
+            <HeartIcon name="heart-outline"/>
+            <PersonIcon />
           </div>
 
           <div class="icons-mobile">

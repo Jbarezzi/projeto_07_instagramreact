@@ -8,7 +8,7 @@ function Story(props) {
                 {props.user}
             </div>
         </div>
-    )
+    );
 } 
 
 export default function Stories() {
@@ -30,5 +30,5 @@ export default function Stories() {
             <ion-icon name="chevron-forward-circle"></ion-icon>
         </div>
     </div>
-    )
+    );
 }

@@ -6,7 +6,7 @@ export default function Sidebar() {
         image: "catanacomics.svg",
         user: "catanacomics",
         name: "Catana"
-      }
+      };
     
     return(
         <div class="sidebar">
