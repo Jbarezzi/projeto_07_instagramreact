@@ -2,7 +2,7 @@ function Sugestion(props) {
     return(
         <div class="sugestion">
             <div class="user">
-                <img src={`assets/img/${props.image}`} alt={`Foto de perfil de ${props.user}`}/>
+                <img src={`./assets/img/${props.image}`} alt={`Foto de perfil de ${props.user}`}/>
                 <div class="text">
                   <div class="name">{props.user}</div>
                   <div class="motive">{props.motive}</div>
