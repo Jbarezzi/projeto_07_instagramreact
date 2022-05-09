@@ -8,7 +8,7 @@ function Post(props) {
         <div class="post">
             <div class="post-top">
                 <div class="user">
-                  <img src={`assets/img/${props.user.image}`} alt={`Foto de perfil de ${props.user.name}`} />
+                  <img src={`./assets/img/${props.user.image}`} alt={`Foto de perfil de ${props.user.name}`} />
                   {props.user.name}
                 </div>
                 <div class="actions">
@@ -17,7 +17,7 @@ function Post(props) {
             </div>
 
             <div class="content" onClick={ImageLike}>
-                <img src={`assets/img/${props.content}`} alt={`Foto de ${props.user.name}`} />
+                <img src={`./assets/img/${props.content}`} alt={`Foto de ${props.user.name}`} />
             </div>
 
             <div class="post-bottom">
@@ -33,7 +33,7 @@ function Post(props) {
                 </div>
 
                 <div class="likes">
-                  <img src={`assets/img/${props.likes.friendImage}`} alt={`Foto de perfil de ${props.likes.friend}`}/>
+                  <img src={`./assets/img/${props.likes.friendImage}`} alt={`Foto de perfil de ${props.likes.friend}`}/>
                   <div class="texto">
                     Curtido por <strong>{props.likes.friend}</strong> e <strong>outras {props.likes.quantity} pessoas</strong>
                   </div>
