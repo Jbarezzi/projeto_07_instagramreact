@@ -1,7 +1,9 @@
+import React from "react";
 import PlaneIcon from "./PlaneIcon";
 import HeartIcon from "./HeartIcon";
 
 function Post(props) {
+    const [likeState, setlikeState] = React.useState("heart-outline");
     return (
         <div class="post">
             <div class="post-top">
@@ -14,14 +16,14 @@ function Post(props) {
                 </div>
             </div>
 
-            <div class="content">
+            <div class="content" onClick={ImageLike}>
                 <img src={`assets/img/${props.content}`} alt={`Foto de ${props.user.name}`} />
             </div>
 
             <div class="post-bottom">
                 <div class="actions">
                   <div>
-                    <HeartIcon name="heart-outline"/>
+                    <HeartIcon name={likeState} onClick={Like}/>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <PlaneIcon />
                   </div>
@@ -39,6 +41,20 @@ function Post(props) {
             </div>
         </div>
     );
+
+    function ImageLike() {
+      setlikeState("heart");
+    }
+
+    function Like() {
+      if(likeState === "heart-outline") {
+        setlikeState("heart");
+      } else if (likeState === "heart") {
+        setlikeState("heart-outline");
+      }
+    }
+
+    
 }
 
 export default function Posts() {
